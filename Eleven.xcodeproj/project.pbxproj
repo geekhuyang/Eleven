@@ -51,9 +51,6 @@
 		0A490DFE1B82D20900DFF33D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A490DFC1B82D20900DFF33D /* LaunchScreen.xib */; };
 		0A490E0A1B82D20A00DFF33D /* ElevenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A490E091B82D20A00DFF33D /* ElevenTests.m */; };
 		0A490E2C1B82D6E600DFF33D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A490E2E1B82D6E600DFF33D /* Localizable.strings */; };
-		0A85111F1B874B82008C1E97 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A85111A1B874B82008C1E97 /* down@2x.png */; };
-		0A8511201B874B82008C1E97 /* YiRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A85111C1B874B82008C1E97 /* YiRefreshFooter.m */; };
-		0A8511211B874B82008C1E97 /* YiRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A85111E1B874B82008C1E97 /* YiRefreshHeader.m */; };
 		0A8EAF961B838A5400C4A6FF /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EAF931B838A5400C4A6FF /* NSObject+HUD.m */; };
 		0A8EAF971B838A5400C4A6FF /* NSObject+JudgeNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EAF951B838A5400C4A6FF /* NSObject+JudgeNull.m */; };
 		0AA5787B1B8B13A800EF8E20 /* FileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA578701B8B13A800EF8E20 /* FileModel.m */; };
@@ -149,11 +146,6 @@
 		0A490E291B82D55200DFF33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A490E301B82D6E800DFF33D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0A490E311B82D6EC00DFF33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0A85111A1B874B82008C1E97 /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
-		0A85111B1B874B82008C1E97 /* YiRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshFooter.h; sourceTree = "<group>"; };
-		0A85111C1B874B82008C1E97 /* YiRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshFooter.m; sourceTree = "<group>"; };
-		0A85111D1B874B82008C1E97 /* YiRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshHeader.h; sourceTree = "<group>"; };
-		0A85111E1B874B82008C1E97 /* YiRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshHeader.m; sourceTree = "<group>"; };
 		0A8EAF8F1B83895F00C4A6FF /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		0A8EAF901B83895F00C4A6FF /* AppPrefixFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPrefixFile.h; sourceTree = "<group>"; };
 		0A8EAF911B83898F00C4A6FF /* Eleven-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eleven-Prefix.pch"; sourceTree = "<group>"; };
@@ -345,7 +337,6 @@
 		0A43691E1B8307B400970757 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				0A8511191B874B82008C1E97 /* YiRefresh */,
 				0A07B87A1B85BED4004245F3 /* kxmovie */,
 				0A4369251B83089B00970757 /* CocoaWebResource */,
 			);
@@ -502,18 +493,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A8511191B874B82008C1E97 /* YiRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				0A85111A1B874B82008C1E97 /* down@2x.png */,
-				0A85111B1B874B82008C1E97 /* YiRefreshFooter.h */,
-				0A85111C1B874B82008C1E97 /* YiRefreshFooter.m */,
-				0A85111D1B874B82008C1E97 /* YiRefreshHeader.h */,
-				0A85111E1B874B82008C1E97 /* YiRefreshHeader.m */,
-			);
-			path = YiRefresh;
-			sourceTree = "<group>";
-		};
 		0AA578301B87763F00EF8E20 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,7 +647,6 @@
 				0A4369521B8308A900970757 /* docroot in Resources */,
 				0A07B8871B85BED4004245F3 /* kxmovie.bundle in Resources */,
 				0A490E2C1B82D6E600DFF33D /* Localizable.strings in Resources */,
-				0A85111F1B874B82008C1E97 /* down@2x.png in Resources */,
 				0A490DF91B82D20900DFF33D /* Main.storyboard in Resources */,
 				0A490DFE1B82D20900DFF33D /* LaunchScreen.xib in Resources */,
 				0A490DFB1B82D20900DFF33D /* Images.xcassets in Resources */,
@@ -725,7 +703,6 @@
 				0A8EAF971B838A5400C4A6FF /* NSObject+JudgeNull.m in Sources */,
 				0A4369461B83089B00970757 /* FileResource.m in Sources */,
 				0AA5787D1B8B13A800EF8E20 /* LocalFileViewModel.m in Sources */,
-				0A8511211B874B82008C1E97 /* YiRefreshHeader.m in Sources */,
 				0AA5787C1B8B13A800EF8E20 /* LocalFileViewController.m in Sources */,
 				0A4369491B83089B00970757 /* HTTPResponse.m in Sources */,
 				0ACBC2EE1B8B569E00FB1F3A /* HistoryArchive.m in Sources */,
@@ -751,7 +728,6 @@
 				0A4369421B83089B00970757 /* AsyncSocket.m in Sources */,
 				0A4369481B83089B00970757 /* HTTPConnection.m in Sources */,
 				0AABD77C1B8C609000B8AB47 /* WifiManager.m in Sources */,
-				0A8511201B874B82008C1E97 /* YiRefreshFooter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
