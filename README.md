@@ -46,6 +46,8 @@ Copyright (c) 2015 coderyi.all rights reserved.
 
 This code is distributed under the terms and conditions of the MIT license.
 
+And you can not upload it to the App Store.
+
 ##Contact
 
 
