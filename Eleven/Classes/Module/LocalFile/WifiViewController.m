@@ -11,18 +11,17 @@
 #import "HTTPServer.h"
 #import "BaseNavigationController.h"
 #import "WifiManager.h"
-@interface WifiViewController ()<WebFileResourceDelegate>{
+@interface WifiViewController ()<WebFileResourceDelegate> {
     UILabel *urlLabel;
     HTTPServer *httpServer;
     NSMutableArray *fileList;
 }
-
-
 @end
 
 @implementation WifiViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -30,7 +29,6 @@
     UILabel *titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 50)];
     titleLabel.textAlignment=NSTextAlignmentCenter;
     titleLabel.numberOfLines=0;
-    //    titleLabel.text=@"可以通过itunes或者wifi传输视频\n支持mp3,caff,aiff,ogg,wma,m4a,m4v,wmv,3gp,mp4,mov,avi,mkv,mpeg,mpg,flv,vob等格式";
     titleLabel.font=[UIFont systemFontOfSize:13];
     titleLabel.textColor=YiTextGray;
     titleLabel.text=NSLocalizedString(@"Open button, and then enter the address in the browser address bar\nClose button Remember when the transfer is complete", nil);
@@ -48,41 +46,33 @@
     [self.view addSubview:urlLabel];
     urlLabel.textAlignment=NSTextAlignmentCenter;
     urlLabel.textColor=[UIColor blueColor];
-//    fileList = [[NSMutableArray alloc] init];
-//    [self loadFileList];
-//    
-//    // set up the http server
-//    httpServer = [[HTTPServer alloc] init];
-//    [httpServer setType:@"_http._tcp."];
-//    [httpServer setPort:8080];
-//    [httpServer setName:@"CocoaWebResource"];
-//    [httpServer setupBuiltInDocroot];
-//    httpServer.fileResourceDelegate = self;
     
     if (serviceSwitch.on) {
         [urlLabel setText:[NSString stringWithFormat:@"http://%@:%d", [[WifiManager sharedInstance].httpServer hostName], [[WifiManager sharedInstance].httpServer port]]];
     }else{
-        
         [urlLabel setText:@""];
     }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)dealloc {
+
+- (void)dealloc
+{
     httpServer.fileResourceDelegate = nil;
     
 }
+
 - (void)toggleService:(id)sender
 {
     NSError *error;
     if ([(UISwitch*)sender isOn])
     {
-//        BOOL serverIsRunning = [httpServer start:&error];
         BOOL serverIsRunning ;
-         [[WifiManager sharedInstance] operateServer:YES];
+        [[WifiManager sharedInstance] operateServer:YES];
         [WifiManager sharedInstance].serverStatus=YES;
         if(!serverIsRunning)
         {
@@ -92,9 +82,8 @@
     }
     else
     {
-//        [httpServer stop];
         [[WifiManager sharedInstance] operateServer:NO];
-[WifiManager sharedInstance].serverStatus=NO;
+        [WifiManager sharedInstance].serverStatus=NO;
         [urlLabel setText:@""];
     }
 }
@@ -165,17 +154,5 @@
     }
     [self loadFileList];
 }
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

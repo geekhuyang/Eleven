@@ -14,6 +14,7 @@
 #import "LocalFileViewController.h"
 #import "NetworkViewController.h"
 #import "MoreViewController.h"
+
 @interface MenuTableViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
@@ -90,15 +91,12 @@
 {
     if (sectionIndex == 0)
         return 0;
-    
     return 34;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-   
-    
     if (indexPath.section == 0 && indexPath.row == 2) {
         MoreViewController *homeViewController = [[MoreViewController alloc] init];
         BaseNavigationController *navigationController = [[BaseNavigationController alloc] initWithRootViewController:homeViewController];
@@ -112,9 +110,6 @@
         BaseNavigationController *navigationController = [[BaseNavigationController alloc] initWithRootViewController:secondViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
-    
-    
-    
     [self.frostedViewController hideMenuViewController];
 }
 
@@ -153,6 +148,7 @@
     
     return cell;
 }
+
 /**
  *  当tableview中 数据源数量很少不足以填满当前区域  比如只有1一个数据  那么它将隐藏 空cell的分割线
  */

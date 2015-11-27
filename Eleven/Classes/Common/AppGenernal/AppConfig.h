@@ -29,8 +29,6 @@
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 
-#define YKClientId @"bf5803ceb7daf89c"
-
 #endif
 
 

@@ -1,10 +1,13 @@
 PODS:
   - REFrostedViewController (2.4.8)
+  - YiRefresh (0.9.3)
 
 DEPENDENCIES:
   - REFrostedViewController (~> 2.4.8)
+  - YiRefresh (~> 0.9.3)
 
 SPEC CHECKSUMS:
   REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  YiRefresh: dfea6019e65d8dc8dce1295e2cbededff91548e5
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0.beta.4
