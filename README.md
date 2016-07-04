@@ -44,7 +44,7 @@ a simple way to use pull-to-refresh.
 
 Copyright (c) 2015 coderyi.all rights reserved.
 
-由于某些原因Eleven从MIT协议改变成采用[CC Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/) 中文：[署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/3.0/cn/
+Eleven已不再采用MIT协议，现采用[CC Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/) 中文：[署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/3.0/cn/
 ).
 
 And you can not upload it to the App Store.
