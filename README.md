@@ -4,6 +4,15 @@ Eleven Player is a simple powerful video player.
 
 App Store:[https://itunes.apple.com/cn/app/elevenplayer/id1033773648](https://itunes.apple.com/cn/app/elevenplayer/id1033773648)
 
+##LICENSE
+
+Copyright (c) 2015 coderyi.all rights reserved.
+
+Eleven已不再采用MIT协议，现采用[CC Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/) 中文：[署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/3.0/cn/
+).
+
+And you can not upload it to the App Store.
+
 ##Eleven Player
 
 Support m4v, wmv, 3gp, mp4, mov, avi, mkv, mpeg, mpg, flv, vob format
@@ -40,14 +49,7 @@ iOS 7/8 style blurred view controller that appears on top of your view controlle
 a simple way to use pull-to-refresh.
 
 
-##LICENSE
 
-Copyright (c) 2015 coderyi.all rights reserved.
-
-Eleven已不再采用MIT协议，现采用[CC Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/) 中文：[署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/3.0/cn/
-).
-
-And you can not upload it to the App Store.
 
 ##Contact
 
