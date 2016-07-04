@@ -13,7 +13,7 @@ Eleven已不再采用MIT协议，现采用[CC Attribution-NonCommercial](http://
 
 And you can not upload it to the App Store.
 
-##Eleven Player
+##Features
 
 Support m4v, wmv, 3gp, mp4, mov, avi, mkv, mpeg, mpg, flv, vob format
 
