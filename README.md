@@ -8,7 +8,7 @@ App Store:[https://itunes.apple.com/cn/app/elevenplayer/id1033773648](https://it
 
 Copyright (c) 2015 coderyi.all rights reserved.
 
-Eleven已不再采用MIT协议，现采用[CC Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/) 中文：[署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/3.0/cn/
+Eleven no longer use MIT license，now use [CC Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/) 中文：[署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/3.0/cn/
 ).
 
 And you can not upload it to the App Store.
